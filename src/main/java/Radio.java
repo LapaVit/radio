@@ -10,6 +10,14 @@ public class Radio {
             currentVolume = 0;
         }
     }
+    
+    public void prev() {
+        if (currentStation > 0) {
+            currentStation--;
+        } else {
+            currentStation = 9;
+        }
+    }
 
     public void nextStation() {
         if (currentStation < 9) {
